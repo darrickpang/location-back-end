@@ -8,3 +8,5 @@
 User.destroy_all
 
 User.create(name: 'Darrick Pang', password: '123')
+User.create(name: 'Homer Simpson', password: '123')
+User.create(name: 'Deion Sanders', password: '123')
