@@ -1,0 +1,2 @@
+class LocateUsersController < ApplicationController
+end

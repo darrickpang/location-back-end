@@ -1,0 +1,2 @@
+class LocateUser < ApplicationRecord
+end

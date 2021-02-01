@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :locate_users
   resources :locators
   resources :friend_requests
   resources :users
