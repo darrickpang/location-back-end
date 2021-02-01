@@ -1,0 +1,2 @@
+class LocatorsController < ApplicationController
+end
