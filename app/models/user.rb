@@ -1,4 +1,7 @@
 class User < ApplicationRecord
+    has_many :locate_users
+    has_many :locators, through: :locate_users
+    
     has_many :friend_requests_as_requestor,
         foreign_key: :requestor_id,
         class_name: :FriendRequest 
