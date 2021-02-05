@@ -28,8 +28,6 @@ class LocatorsController < ApplicationController
         render json: locator
     end
 
-    end 
-
     private
     def locator_params
         params.require(:locator).permit(:latitude, :longitude)
