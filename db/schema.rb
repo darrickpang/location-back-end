@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_01_24_223942) do
+ActiveRecord::Schema.define(version: 2021_02_01_205457) do
 
   create_table "friend_requests", force: :cascade do |t|
     t.integer "requestor_id"
@@ -18,6 +18,22 @@ ActiveRecord::Schema.define(version: 2021_01_24_223942) do
     t.string "status"
     t.string "requestor_name"
     t.string "receiver_name"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
+
+  create_table "locate_users", force: :cascade do |t|
+    t.string "city_name"
+    t.string "country"
+    t.integer "user_id"
+    t.integer "locator_id"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
+
+  create_table "locators", force: :cascade do |t|
+    t.integer "latitude"
+    t.integer "longitude"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end

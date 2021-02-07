@@ -6,7 +6,8 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 User.destroy_all
-Locator.destroy.all 
+Locator.destroy_all 
+LocateUser.destroy_all 
 
 User.create(name: 'Darrick Pang', password: '123')
 User.create(name: 'Homer Simpson', password: '123')
@@ -14,3 +15,5 @@ User.create(name: 'Deion Sanders', password: '123')
 User.create(name: 'James Bond', password: '123')
 
 Locator.create(latitude: 31, longitude: 100)
+
+LocateUser.create(city_name: "Milpitas", country: "USA", user_id: 1, locator_id: 1)
