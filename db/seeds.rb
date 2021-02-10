@@ -15,5 +15,6 @@ User.create(name: 'Deion Sanders', password: '123')
 User.create(name: 'James Bond', password: '123')
 
 Locator.create(latitude: 31, longitude: 100)
+Locator.create(latitude: 25, longitude: 191)
 
-LocateUser.create(city_name: "Milpitas", country: "USA", user_id: 1, locator_id: 1)
+LocateUser.create(city_name: "Springfield", country: "USA", user_id: 2, locator_id: 2)
