@@ -1,4 +1,8 @@
 Rails.application.routes.draw do
+  resources :trips do
+    resources :checkins, only: :create
+  end
+  root 'trips#index'
   get 'checkins/create'
   get 'trips/index'
   get 'trips/create'
