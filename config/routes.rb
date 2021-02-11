@@ -1,4 +1,8 @@
 Rails.application.routes.draw do
+  get 'checkins/create'
+  get 'trips/index'
+  get 'trips/create'
+  get 'trips/show'
   resources :locate_users
   resources :locators
   resources :friend_requests
